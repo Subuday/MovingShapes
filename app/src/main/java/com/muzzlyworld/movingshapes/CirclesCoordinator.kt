@@ -43,7 +43,6 @@ class CirclesCoordinator(private val strokeWidth: Int) {
     }
 
     private fun generateCircles(left: Int, top: Int, right: Int, bottom: Int) {
-        _circles.clear()
         val maxCircles = Random.nextInt(1, 30)
         while (_circles.size < maxCircles) {
             val circle = Circle.randomCircle(strokeWidth, left, top, right, bottom)
